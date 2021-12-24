@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-*k_@53-!_9yie*&+i68wu_0$d!)ksjuo48$=z69z3ug!2%o815'
+SECRET_KEY = 'django-insecure-o@+oz!yo%qcvnq_17cce&rh#zr6=i&ch$oi@4gyqb1g69v=-=%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'employee_register'
 ]
 
 MIDDLEWARE = [
@@ -75,8 +76,13 @@ WSGI_APPLICATION = 'employee_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'EmployeeDB',
+        'USER':'postgresql',
+        'PASSWORD':'postgresql',
+        'HOST':'localhost',
+        'PORT':'5432'
+
     }
 }
 

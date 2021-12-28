@@ -17,7 +17,18 @@
     />
   </head>
   <body>
-    {% block content %} {% endblock content %}
+    <div class="container">
+      <div class="col-md-10 offset-md-1 mt-5">
+        <div class="jumbotron">
+          <h1 class="display-4">Employee Register</h1>
+          <p class="lead font-italic">
+            My First Django Project for Implementing CRUD Operations
+          </p>
+          <hr class="my-4" />
+          {% block content %} {% endblock content %}
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

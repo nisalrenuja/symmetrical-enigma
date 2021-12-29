@@ -24,7 +24,10 @@
         <a href="{% url 'employee_update' employee.id %}" class="btn tex-secondary px-0">
             <i class="far-edit far-lg">Edit</i>
         </a>
-        <form action=""></form>
+        <form action="{% url 'employee_delete' employee.id %}" method="post" class="d-inline">
+            {% csrf_token %}
+            <button type="submit" class="btn"><i>Delete</i></button>
+        </form>
     </td>
   </tr>
     {% endfor %}

@@ -1,14 +1,11 @@
-from django import forms
-from django.forms.forms import Form
-from django.shortcuts import redirect, render
-
-from employee_register.forms import EmployeeForm
 from .forms import EmployeeForm
 from django.shortcuts import render,redirect
+from .models import Employee
 # Create your views here.
 
 def employee_list(request):
-    return render(request,"employee_register/employee_list.html")
+    context = {'employee_list':Employee.objects.all()}
+    return render(request,"employee_register/employee_list.html",context)
 
 def employee_form(request):
     if request.method == "GET":

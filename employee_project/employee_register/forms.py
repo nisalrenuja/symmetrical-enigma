@@ -1,6 +1,3 @@
-from django import forms
-from django.db.models.base import Model
-from django.forms import fields
 from .models import Employee
 from django import forms
 
@@ -13,5 +10,10 @@ class EmployeeForm(forms.ModelForm):
              'fullname' : 'Full Name',
              'emp_code' : 'Employee Code',
              'mobile' : 'Mobile Number',
-             'position' : 'Position',
+             'position' : 'Position'
          }
+
+     def __init__(self, *args, **kwargs):
+         super(EmployeeForm,self).__init__(*args, **kwargs)
+         self.fields['position'].empty_label = "Select"
+        

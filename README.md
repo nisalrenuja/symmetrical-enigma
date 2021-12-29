@@ -1,8 +1,8 @@
 ### Django CRUD operations with PostgreSQL
 <hr>
 
-![insert](https://user-images.githubusercontent.com/42801983/147706892-ebb1ac09-99f5-45f5-af10-872d5eaac6cc.png)
+![Screenshot 2021-12-30 033927](https://user-images.githubusercontent.com/42801983/147707145-be1bc1ed-22d4-47ca-881d-e7c86a28e011.png)
 
 <hr>
 
-![list](https://user-images.githubusercontent.com/42801983/147707052-75be8d92-b07e-4089-b234-3e07e1ca9165.png)
+![Screenshot 2021-12-30 033945](https://user-images.githubusercontent.com/42801983/147707166-e3dcab50-5240-4a6e-b5cb-91414cc25675.png)
